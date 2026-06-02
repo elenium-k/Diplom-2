@@ -1,17 +1,21 @@
+# Maven
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+# Kotlin
 .kotlin
 
 ### IntelliJ IDEA ###
 .idea/modules.xml
-.idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
 *.iws
 *.iml
 *.ipr
+# Но сохраняем .idea/ в репозитории, если нужно (например, для общих настроек)
+!.idea/
 
 ### Eclipse ###
 .apt_generated
@@ -37,3 +41,18 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+# Дополнительные игнорируемые папки (если они не нужны в репозитории)
+.target/
+.mvn/
+.allure/
+
+# ВАЖНОЕ ИЗМЕНЕНИЕ ДЛЯ ALLURE
+# Разрешаем просмотр папки target (но не её содержимого)
+!target/
+# Разрешаем просмотр содержимого target (чтобы Git мог «увидеть» подпапки)
+!target/*
+# Явно разрешаем папку allure-results внутри target
+!target/allure-results/
+# Дополнительно: разрешаем всё содержимое allure-results
+!target/allure-results/*
