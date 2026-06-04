@@ -1,0 +1,5 @@
+utils/ApiConfig.class
+AuthOrderTest.class
+NoAuthOrderTest.class
+RegistrationParameterizedTest.class
+LoginParameterizedTest.class

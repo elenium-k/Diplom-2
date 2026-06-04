@@ -1,0 +1,6 @@
+model/User.class
+service/OrdersClient.class
+service/UserClient.class
+model/Order.class
+service/UserGenerator.class
+model/UserCreds.class
