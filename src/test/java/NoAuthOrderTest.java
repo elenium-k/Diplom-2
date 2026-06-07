@@ -67,4 +67,3 @@ public class NoAuthOrderTest {
         assertEquals(expectedStatusCode, response.statusCode());
         }
     }
-
